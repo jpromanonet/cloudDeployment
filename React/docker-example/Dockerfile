@@ -16,4 +16,5 @@ COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/build /usr/share/nginx/html
 
 # How to run it?
-# docker build -t app .
+# sudo docker build -t app .
+# sudo docker -p 8000:80 app 
