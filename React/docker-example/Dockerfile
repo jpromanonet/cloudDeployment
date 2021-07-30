@@ -13,3 +13,4 @@ RUN npn run build
 # This is the second stage and we start by installing the latest version of nginx
 FROM nginx
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /app/build /usr/share/nginx/html
