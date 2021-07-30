@@ -1,3 +1,5 @@
 FROM node:15.4 as build
 
 WORKDIR /app
+
+COPY package*.json .
