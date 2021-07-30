@@ -14,3 +14,6 @@ RUN npn run build
 FROM nginx
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/build /usr/share/nginx/html
+
+# How to run it?
+# docker build -t app .
