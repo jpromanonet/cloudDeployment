@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json .
 RUN npm install
 COPY . .
-RUN npn run build
+RUN npm run build
 
 # This is the second stage and we start by installing the latest version of nginx
 FROM nginx
